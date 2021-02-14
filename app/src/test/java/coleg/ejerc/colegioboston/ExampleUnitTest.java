@@ -1,4 +1,4 @@
-package com.example.apliboston;
+package coleg.ejerc.colegioboston;
 
 import org.junit.Test;
 
