@@ -71,7 +71,12 @@ public class RegistrarActivity extends AppCompatActivity {
 
 
 
-    }//fin del oncreate!
+    }
+
+
+
+
+    //fin del oncreate!
 
     private void dameToastdeerror(String error) {
 

@@ -7,11 +7,27 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.basgeekball.awesomevalidation.AwesomeValidation;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
     Button btn_login,btn_registrar,btn_recuperar;
     EditText et_mail,et_pass;
+
+    AwesomeValidation awesomeValidation;
+
+    FirebaseAuth firebaseAuth;
+
+
+    String mail="";
+    String pass="";
+    FirebaseAuth mAuth;
 
 
 
@@ -19,6 +35,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        //
+        firebaseAuth = FirebaseAuth.getInstance();
+        mAuth=FirebaseAuth.getInstance();
+
+        et_mail = findViewById(R.id.et_mail);
+        et_pass = findViewById(R.id.et_pass);
+
+
+        //
 
         et_mail = findViewById(R.id.et_mail);
         et_pass = findViewById(R.id.et_pass);
@@ -39,6 +65,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
+                mail = et_mail.getText().toString();
+                pass = et_pass.getText().toString();
+
+                if (!mail.isEmpty() && !pass.isEmpty()){
+
+                    loginUser();
+                }
+
+                else{
+                    Toast.makeText(MainActivity.this, "Datos incorrectos", Toast.LENGTH_SHORT).show();
+                }
+
+
             }
         });
 
@@ -49,7 +88,34 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-    }//fin del oncreate!
+    }
+//validar Usuario
+    private void loginUser(){
+
+        mAuth.signInWithEmailAndPassword(mail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+            @Override
+            public void onComplete(@NonNull Task<AuthResult> task) {
+                if (task.isSuccessful()) {
+
+                    startActivity(new Intent(MainActivity.this, HomeActivity.class));
+
+                }
+                else{
+
+                    Toast.makeText(MainActivity.this, "Usuario no puede iniciar sesión", Toast.LENGTH_SHORT).show();
+
+                }
+
+
+
+            }
+        });
+
+    }
+
+
+
+    //fin del oncreate!
 
     private void dameToastdeerror(String error) {
 
