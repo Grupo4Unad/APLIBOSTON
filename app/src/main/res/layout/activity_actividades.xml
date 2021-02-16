@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="90dp"
+        android:layout_height="91dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.056"
+        app:srcCompat="@drawable/logo_cole_boston" />
+
+    <LinearLayout
+        android:layout_width="157dp"
+        android:layout_height="33dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.433">
+
+        <Button
+            android:id="@+id/boton_notas"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#3F51B5"
+            android:text="Notas"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="108dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginRight="56dp"
+        android:text="Sesion de Estudiantes"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/info_notas"
+        android:layout_width="272dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="188dp"
+        android:text="Para consultar y revisar sus notas puedes dar click en el siguiente botón:"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/info_Guias"
+        android:layout_width="272dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="432dp"
+        android:text="Para revisar sus guías de actividades debes dar click en el siguiente botón: "
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:layout_width="175dp"
+        android:layout_height="34dp"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="528dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/boton_actividades"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:background="#3F51B5"
+            android:text="Guías de Actividades"
+            android:textAlignment="center"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

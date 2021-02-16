@@ -97,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
 
-                    startActivity(new Intent(MainActivity.this, HomeActivity.class));
+                    startActivity(new Intent(MainActivity.this, MenuActivity.class));
 
                 }
                 else{
