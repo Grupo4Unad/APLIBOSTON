@@ -66,31 +66,26 @@
         android:id="@+id/info_Guias"
         android:layout_width="272dp"
         android:layout_height="48dp"
-        android:layout_marginTop="432dp"
+        android:layout_marginTop="384dp"
         android:text="Para revisar sus guías de actividades debes dar click en el siguiente botón: "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <LinearLayout
-        android:layout_width="175dp"
-        android:layout_height="34dp"
-        android:layout_marginStart="116dp"
-        android:layout_marginTop="528dp"
-        android:orientation="vertical"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <Button
-            android:id="@+id/boton_actividades"
-            android:layout_width="match_parent"
-            android:layout_height="36dp"
-            android:background="#3F51B5"
-            android:text="Guías de Actividades"
-            android:textAlignment="center"
-            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
-            android:textSize="18sp" />
-    </LinearLayout>
+    <Button
+        android:id="@+id/btn_guias"
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:layout_marginEnd="120dp"
+        android:background="#3F51B5"
+        android:text="Guías de Actividades"
+        android:textAlignment="center"
+        android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

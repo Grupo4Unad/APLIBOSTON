@@ -197,4 +197,18 @@ public class MainActivity extends AppCompatActivity {
         }
 
     }
+    //Método Si inicio sesión no volverla a iniciar
+    @Override
+    protected void onStart() {
+
+        super.onStart();
+        if (mAuth.getCurrentUser() != null) {
+
+            startActivity(new Intent(MainActivity.this, MenuActivity.class));
+            finish();
+
+        }
+    }
+
+
 }
