@@ -66,7 +66,7 @@
         android:id="@+id/info_Guias"
         android:layout_width="272dp"
         android:layout_height="48dp"
-        android:layout_marginTop="384dp"
+        android:layout_marginTop="364dp"
         android:text="Para revisar sus guías de actividades debes dar click en el siguiente botón: "
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.496"
@@ -77,7 +77,6 @@
         android:id="@+id/btn_guias"
         android:layout_width="170dp"
         android:layout_height="50dp"
-        android:layout_marginEnd="120dp"
         android:background="#3F51B5"
         android:text="Guías de Actividades"
         android:textAlignment="center"
@@ -85,7 +84,9 @@
         android:textSize="18sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.7" />
+        app:layout_constraintVertical_bias="0.731" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

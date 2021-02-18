@@ -18,7 +18,7 @@
     </TextView>
 
     <Button
-        android:id="@+id/btn_cerrar"
+        android:id="@+id/btn_cerrar1"
         android:layout_marginTop="10dp"
         android:textColor="#fff"
         android:padding="10dp"
