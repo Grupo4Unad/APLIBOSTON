@@ -17,103 +17,65 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn_login,btn_registrar,btn_recuperar;
+    Button btn_login,btn_registrar,  btn_recuperar;
     EditText et_mail,et_pass;
-
     AwesomeValidation awesomeValidation;
-
     FirebaseAuth firebaseAuth;
-
-
     String mail="";
     String pass="";
     FirebaseAuth mAuth;
-
-
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-
-        //
         firebaseAuth = FirebaseAuth.getInstance();
         mAuth=FirebaseAuth.getInstance();
-
         et_mail = findViewById(R.id.et_mail);
         et_pass = findViewById(R.id.et_pass);
-
-
-        //
-
-        et_mail = findViewById(R.id.et_mail);
-        et_pass = findViewById(R.id.et_pass);
-
         btn_login = findViewById(R.id.btn_login);
         btn_recuperar = findViewById(R.id.btn_recuperar);
         btn_registrar = findViewById(R.id.btn_registrar);
-
-        btn_registrar.setOnClickListener(new View.OnClickListener() {
+//boton registra
+         btn_registrar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this,RegistrarActivity.class);
                 startActivity(i);
             }
         });
-
+//boton iniciar sesion
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 mail = et_mail.getText().toString();
                 pass = et_pass.getText().toString();
-
                 if (!mail.isEmpty() && !pass.isEmpty()){
-
                     loginUser();
                 }
-
                 else{
                     Toast.makeText(MainActivity.this, "Datos incorrectos", Toast.LENGTH_SHORT).show();
                 }
-
-
             }
         });
-
-        btn_recuperar.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-
-            }
-        });
-
     }
-//validar Usuario
+    //validar Usuario
     private void loginUser(){
 
         mAuth.signInWithEmailAndPassword(mail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
                 if (task.isSuccessful()) {
-
                     startActivity(new Intent(MainActivity.this, MenuActivity.class));
-
                 }
                 else{
 
                     Toast.makeText(MainActivity.this, "Usuario no puede iniciar sesión", Toast.LENGTH_SHORT).show();
-
                 }
-
-
-
             }
         });
 
     }
-
-
 
     //fin del oncreate!
 
@@ -205,10 +167,15 @@ public class MainActivity extends AppCompatActivity {
         if (mAuth.getCurrentUser() != null) {
 
             startActivity(new Intent(MainActivity.this, MenuActivity.class));
-            finish();
+            // finish();
 
         }
     }
 
+   public void siguiente(View view){
+       Intent i = new Intent(this,recuperarPassActivity.class);
+       startActivity(i);
+
+}
 
 }
