@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "93178619173",
+    "firebase_url": "https://colegioboston-c61bc-default-rtdb.firebaseio.com",
+    "project_id": "colegioboston-c61bc",
+    "storage_bucket": "colegioboston-c61bc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93178619173:android:287bd1d9d0f7f096a2a6cc",
+        "android_client_info": {
+          "package_name": "coleg.ejerc.basedatos"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93178619173-1o9htortboo5c6oo3ffoo23q0d4e4d23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbiZkpNnrlPY4MoiTLrywQpMepy41y6Ls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93178619173-1o9htortboo5c6oo3ffoo23q0d4e4d23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:93178619173:android:b39934ae19207d0da2a6cc",
+        "android_client_info": {
+          "package_name": "coleg.ejerc.colegioboston"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "93178619173-1o9htortboo5c6oo3ffoo23q0d4e4d23.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCbiZkpNnrlPY4MoiTLrywQpMepy41y6Ls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "93178619173-1o9htortboo5c6oo3ffoo23q0d4e4d23.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

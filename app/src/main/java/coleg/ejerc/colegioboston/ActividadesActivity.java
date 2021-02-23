@@ -9,6 +9,7 @@ import android.widget.Button;
 
 public class ActividadesActivity extends AppCompatActivity {
     Button btn_guias;
+    Button btn_contacto;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -21,6 +22,12 @@ public class ActividadesActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(ActividadesActivity.this, DriveActivity.class));
+            }});
+        btn_contacto = findViewById(R.id.contactar_profe);
+        btn_contacto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ActividadesActivity.this, Contacto.class));
             }});
     }
 }
