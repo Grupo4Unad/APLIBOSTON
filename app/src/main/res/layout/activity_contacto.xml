@@ -29,5 +29,14 @@
             android:onClick="onClickWhatsapp"
             android:text="Whatsapp"
             android:textColor="#ffffff" />
+        <Button
+            android:id="@+id/correo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:backgroundTint="@color/colorPrimaryDark"
+            android:onClick="onClickMail"
+            android:text="Correo Electrónico"
+            android:textColor="#ffffff" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
