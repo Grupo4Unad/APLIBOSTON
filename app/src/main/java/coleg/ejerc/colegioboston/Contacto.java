@@ -2,6 +2,7 @@ package coleg.ejerc.colegioboston;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.ActivityNotFoundException;
 import android.content.ComponentName;
 import android.content.Intent;
 import android.content.pm.PackageManager;
@@ -22,5 +23,22 @@ public class Contacto extends AppCompatActivity {
 
         startActivity(new Intent(Intent.ACTION_VIEW).setData(Uri.parse("https://wa.me/+573124474418")));
 
+    }
+
+    public void onClickMail(View v)
+    {
+        String mailto = "mailto:amvargasarc@unadvirtual.edu.co" +
+                "?" +
+                "subject=" + Uri.encode("Asunto: ") +
+                "&body=" + Uri.encode("");
+
+        Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+        emailIntent.setData(Uri.parse(mailto));
+
+        try {
+            startActivity(emailIntent);
+        } catch (ActivityNotFoundException e) {
+            Toast.makeText(this,"Error en intent",Toast.LENGTH_LONG);
+        }
     }
 }
