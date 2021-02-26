@@ -13,6 +13,7 @@ import com.google.firebase.auth.FirebaseAuth;
 public class MenuActivity extends AppCompatActivity {
 
     ImageView img_estudiantes;
+    ImageView img_docentes;
     Button btn_cerrar;
     FirebaseAuth mAuth;
 
@@ -33,6 +34,19 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
+        img_docentes = findViewById(R.id.img_docentes);
+
+        img_docentes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+
+                startActivity(new Intent(MenuActivity.this, ValidarContrasenaProfesor .class));
+
+            }
+        });
+
+
+
         mAuth=FirebaseAuth.getInstance(); btn_cerrar = findViewById(R.id.btn_cerrar);
 
         btn_cerrar.setOnClickListener(new View.OnClickListener() {
@@ -52,4 +66,7 @@ public class MenuActivity extends AppCompatActivity {
 
 
     }
+
+
+
 }

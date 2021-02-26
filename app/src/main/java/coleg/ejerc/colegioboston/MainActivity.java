@@ -2,7 +2,6 @@ package coleg.ejerc.colegioboston;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -12,12 +11,10 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.basgeekball.awesomevalidation.AwesomeValidation;
-import com.basgeekball.awesomevalidation.ValidationStyle;
 import com.google.android.gms.tasks.OnCompleteListener;
 import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
-import com.google.firebase.auth.FirebaseAuthException;
 
 public class MainActivity extends AppCompatActivity {
     Button btn_login,btn_registrar,  btn_recuperar;
@@ -27,19 +24,11 @@ public class MainActivity extends AppCompatActivity {
     String mail="";
     String pass="";
     FirebaseAuth mAuth;
-//validACION
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        //
-        awesomeValidation = new AwesomeValidation(ValidationStyle.BASIC);
-        awesomeValidation.addValidation(this,R.id.et_mail, Patterns.EMAIL_ADDRESS,R.string.invalid_mail);
-        awesomeValidation.addValidation(this,R.id.et_pass,".{6,}",R.string.invalid_password);
-
-        //
-
         firebaseAuth = FirebaseAuth.getInstance();
         mAuth=FirebaseAuth.getInstance();
         et_mail = findViewById(R.id.et_mail);
@@ -61,15 +50,11 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 mail = et_mail.getText().toString();
                 pass = et_pass.getText().toString();
-
-
-
-
                 if (!mail.isEmpty() && !pass.isEmpty()){
                     loginUser();
                 }
                 else{
-                    Toast.makeText(MainActivity.this, "Completa todos los datos..!!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MainActivity.this, "Datos incorrectos", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -80,12 +65,12 @@ public class MainActivity extends AppCompatActivity {
         mAuth.signInWithEmailAndPassword(mail,pass).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
-                if(task.isSuccessful()){
-                    Toast.makeText(MainActivity.this, "Usuario creado con exito", Toast.LENGTH_SHORT).show();
-                    finish();
-                }else {
-                    String errorCode = ((FirebaseAuthException) task.getException()).getErrorCode();
-                    dameToastdeerror(errorCode);
+                if (task.isSuccessful()) {
+                    startActivity(new Intent(MainActivity.this, MenuActivity.class));
+                }
+                else{
+
+                    Toast.makeText(MainActivity.this, "Usuario no puede iniciar sesión", Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -192,5 +177,6 @@ public class MainActivity extends AppCompatActivity {
        startActivity(i);
 
 }
+   
 
 }

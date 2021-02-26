@@ -11,7 +11,12 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".Contacto"></activity>
+        <activity android:name=".ConsultarNotasActivity"></activity>
+        <activity android:name=".AgregarNotasActivity" />
+        <activity android:name=".MenuNotasActivity" />
+        <activity android:name=".ValidarContrasenaProfesor" />
+        <activity android:name=".MenuProfesorActivity" />
+        <activity android:name=".Contacto" />
         <activity android:name=".recuperarPassActivity" />
         <activity android:name=".DriveActivity" />
         <activity android:name=".ActividadesActivity" />
