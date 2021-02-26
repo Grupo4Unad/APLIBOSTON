@@ -20,23 +20,26 @@
             android:textSize="40dp"
             />
 
-        <Button
-            android:id="@+id/button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+
+
+        <ImageButton
+            android:id="@+id/imageButton2"
             android:layout_margin="20dp"
-            android:backgroundTint="#25D366"
-            android:onClick="onClickWhatsapp"
-            android:text="Whatsapp"
-            android:textColor="#ffffff" />
-        <Button
-            android:id="@+id/correo"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:backgroundTint="@color/colorPrimaryDark"
             android:onClick="onClickMail"
-            android:text="Correo Electrónico"
-            android:textColor="#ffffff" />
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/colorPrimaryDark"
+            app:srcCompat="@drawable/gmail_logo" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:backgroundTint="#25D366"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/wp_logo"
+            android:onClick="onClickWhatsapp"
+            android:layout_margin="20dp"
+
+            />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
