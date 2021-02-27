@@ -2,4 +2,20 @@
     <string name="app_name">LoginFirebaseMail77</string>
     <string name="invalid_mail">Ingrese mail valido</string>
     <string name="invalid_password">Ingrese un password mayor a 6 digitos</string>
+    <string name="text_validar_contraseña_prof">Por favor ingrese la contraseña</string>
+    <string name="text_btn_ingresar">Ingresar</string>
+    <string name="text_btn_validar">Validar</string>
+    <string name="text_btn_atras">Atrás</string>
+    <string name="text_btn_gestionar_notas">Gestionar Notas</string>
+    <string name="text_btn_agregar_notas">Agregar Notas</string>
+    <string name="text_agregar_nota">Agregar Nota</string>
+    <string name="text_btn_consultar_notas">Consultar Notas</string>
+    <string name="text_ingresar_nota">Ingrese la nota</string>
+    <string name="text_btn_ingresar_doc">Ingrese el no. de documento</string>
+    <string name="text_ingresar_ciclo">Seleccione el ciclo:</string>
+    <string name="text_ingresar_curso">Seleccione el curso:</string>
+    <string name="text_ingresar_guardar">Guardar</string>
+
+
+
 </resources>
