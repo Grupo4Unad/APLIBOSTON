@@ -17,7 +17,8 @@ import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MainActivity extends AppCompatActivity {
-    Button btn_login,btn_registrar,  btn_recuperar;
+    Button btn_login,btn_registrar,  btn_recuperar, btn_aviso;
+
     EditText et_mail,et_pass;
     AwesomeValidation awesomeValidation;
     FirebaseAuth firebaseAuth;
@@ -36,6 +37,8 @@ public class MainActivity extends AppCompatActivity {
         btn_login = findViewById(R.id.btn_login);
         btn_recuperar = findViewById(R.id.btn_recuperar);
         btn_registrar = findViewById(R.id.btn_registrar);
+        btn_aviso = findViewById(R.id.btn_registrar);
+
 //boton registra
          btn_registrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +47,10 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
+
+
+
+
 //boton iniciar sesion
         btn_login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -58,6 +65,16 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
+
+        btn_aviso.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this,MainAviso.class);
+                startActivity(i);
+            }
+        });
+
+
     }
     //validar Usuario
     private void loginUser(){

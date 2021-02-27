@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/gradiente"
     tools:context=".AgregarNotasActivity">
 
     <LinearLayout
@@ -120,7 +121,7 @@
             android:id="@+id/btn_agregar_nota"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:background="#6A7EEC"
+            android:background="@drawable/macliza"
             android:fontFamily="sans-serif-smallcaps"
             android:text="@string/text_ingresar_guardar"
             android:textColor="#FFFFFF"
