@@ -37,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         btn_login = findViewById(R.id.btn_login);
         btn_recuperar = findViewById(R.id.btn_recuperar);
         btn_registrar = findViewById(R.id.btn_registrar);
-        btn_aviso = findViewById(R.id.btn_registrar);
+        btn_aviso = findViewById(R.id.btn_aviso);
 
 //boton registra
          btn_registrar.setOnClickListener(new View.OnClickListener() {
@@ -47,9 +47,6 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-
-
-
 
 //boton iniciar sesion
         btn_login.setOnClickListener(new View.OnClickListener() {

@@ -44,7 +44,7 @@
         android:id="@+id/btn_login"
         android:textColor="#fff"
         android:text="Login"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/macliza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -56,7 +56,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/macliza"
         android:onClick="siguiente"
         android:padding="5dp"
         android:text="olvide mi contraseña"
@@ -71,7 +71,7 @@
         android:layout_marginTop="10dp"
         android:textColor="#fff"
         android:text="No tengo cuenta"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/macliza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
@@ -81,9 +81,9 @@
         android:layout_width="200dp"
         android:layout_height="33dp"
         android:layout_marginTop="15dp"
-        android:background="@drawable/macliza"
+        android:background="#ffab40"
         android:text="Leer... Importante...."
-        android:textColor="#173B0B"
+        android:textColor="#fafafa"
         android:textSize="14dp"
 
         android:textStyle="bold">

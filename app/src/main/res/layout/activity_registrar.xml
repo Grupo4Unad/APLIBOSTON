@@ -44,7 +44,7 @@
         android:id="@+id/btn_registrar"
         android:textColor="#fff"
         android:text="Registrar"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/macliza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 
