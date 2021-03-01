@@ -14,6 +14,7 @@ public class ActividadesActivity extends AppCompatActivity {
     Button btn_guias;
     Button btn_contacto;
     Button btn_calificar;
+    Button btn_noticias;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -39,13 +40,15 @@ public class ActividadesActivity extends AppCompatActivity {
             public void onClick(View view) {
                 startActivity(new Intent(ActividadesActivity.this, Contacto.class));
             }});
-
+        btn_noticias = findViewById(R.id.btn_noticias);
+        btn_noticias.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(ActividadesActivity.this, NoticiasActivity.class));
+            }});
 
     }
 
-    public void onClickCalificar(View v)
-    {
 
-    }
 }
 
