@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/gradiente"
     android:gravity="center"
     tools:context=".MainActivity">
 
@@ -36,7 +37,7 @@
         android:id="@+id/btn_verificar"
         android:textColor="#fff"
         android:text="Verificar mail"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/macliza"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">
 

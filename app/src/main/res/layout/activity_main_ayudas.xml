@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradiente"
+    android:gravity="center"
+    tools:context=".HomeActivity">
+
+    <TextView
+        android:textSize="20sp"
+        android:textColor="#2F0B3A"
+        android:gravity="center"
+        android:text="AYUDAS PEDAGÓGICAS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"/>
+
+    <Button
+        android:id="@+id/librosgratis"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Libros Gratis"
+        android:background="@drawable/nebamonte"
+        android:textSize="15dp"
+        android:textColor="#170B3B"
+        android:onClick="lbrosgratis"
+        android:layout_marginTop="40sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/deportes"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Todos los deportes"
+        android:background="@drawable/nebamonte"
+        android:textSize="15dp"
+        android:textColor="#170B3B"
+        android:onClick="deportes"
+        android:layout_marginTop="10sp">
+    </Button>
+
+    <Button
+        android:id="@+id/ciencias"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Ciencias Naturales"
+        android:background="@drawable/nebamonte"
+        android:textSize="15dp"
+        android:textColor="#170B3B"
+        android:onClick="ciencias"
+        android:layout_marginTop="10sp">
+    </Button>
+
+    <Button
+        android:id="@+id/profes"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Profesores"
+        android:background="@drawable/nebamonte"
+        android:textSize="15dp"
+        android:textColor="#170B3B"
+        android:layout_marginTop="10sp"
+        android:onClick="irprofes">
+    </Button>
+
+    <Button
+        android:id="@+id/matematicas"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Matemáticas"
+        android:background="@drawable/nebamonte"
+        android:textSize="15dp"
+        android:textColor="#170B3B"
+        android:onClick="matematicas"
+        android:layout_marginTop="10sp">
+
+    </Button>
+
+    <Button
+        android:id="@+id/tecnologia"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:text="Tecnología"
+        android:background="@drawable/nebamonte"
+        android:textSize="15dp"
+        android:textColor="#170B3B"
+        android:onClick="tecnologia"
+        android:layout_marginTop="10sp">
+    </Button>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:layout_marginRight="20dp">
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center">
+
+                <ImageView
+                    android:id="@+id/id_youtube"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="40dp"
+                    android:onClick="youtube"
+                    android:background="@drawable/icon_youtue" />
+
+                <ImageView
+                    android:id="@+id/id_google"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="40dp"
+                    android:onClick="google"
+                    android:background="@drawable/icon_google" />
+
+                <ImageView
+                    android:id="@+id/id_facebook"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="40dp"
+                    android:onClick="facebok"
+                    android:background="@drawable/icon_fcebook" />
+
+                <ImageView
+                    android:id="@+id/id_twiter"
+                    android:layout_width="60dp"
+                    android:layout_height="50dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginLeft="40dp"
+                    android:onClick="twitter"
+                    android:background="@drawable/icon_twitter" />
+            </TableRow>
+
+        </TableLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

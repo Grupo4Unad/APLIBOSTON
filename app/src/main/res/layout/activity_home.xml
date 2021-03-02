@@ -6,6 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@drawable/gradiente"
     tools:context=".HomeActivity">
 
     <TextView
@@ -22,7 +23,7 @@
         android:layout_marginTop="10dp"
         android:textColor="#fff"
         android:padding="10dp"
-        android:background="@color/colorPrimary"
+        android:background="@drawable/macliza"
         android:text="Cerrar sesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content">

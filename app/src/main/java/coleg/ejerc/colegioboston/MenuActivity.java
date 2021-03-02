@@ -15,6 +15,7 @@ public class MenuActivity extends AppCompatActivity {
     ImageView img_estudiantes;
     ImageView img_docentes;
     Button btn_cerrar;
+    Button btn_ayudas;
     FirebaseAuth mAuth;
 
 
@@ -59,7 +60,14 @@ public class MenuActivity extends AppCompatActivity {
         }
         });
 
-
+        btn_ayudas=findViewById(R.id.btn_ayudas);
+        btn_ayudas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent siguiente=new Intent(MenuActivity.this, MainActivityAyudas.class);
+                startActivity(siguiente);
+            }
+        });
 
 
 

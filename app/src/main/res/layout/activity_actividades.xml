@@ -3,6 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:background="@drawable/gradiente"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
@@ -40,7 +41,7 @@
             android:id="@+id/boton_notas"
             android:layout_width="200dp"
             android:layout_height="36dp"
-            android:background="#3F51B5"
+            android:background="@drawable/macliza"
             android:text="Notas"
             android:textAlignment="center"
             android:textColor="@color/common_google_signin_btn_text_dark_pressed"
@@ -57,7 +58,7 @@
             android:id="@+id/btn_guias"
             android:layout_width="200dp"
             android:layout_height="50dp"
-            android:background="#3F51B5"
+            android:background="@drawable/macliza"
             android:layout_marginTop="10dp"
             android:text="Guías de Actividades"
             android:textAlignment="center"
@@ -66,7 +67,7 @@
         <Button
             android:id="@+id/contactar_profe"
             android:layout_width="200dp"
-            android:background="#3F51B5"
+            android:background="@drawable/macliza"
             android:textColor="@color/common_google_signin_btn_text_dark_pressed"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
