@@ -47,8 +47,16 @@ public class ActividadesActivity extends AppCompatActivity {
                 startActivity(new Intent(ActividadesActivity.this, NoticiasActivity.class));
             }});
 
+
+
+
     }
 
+    public void consultarNotas(View view)
+    {
 
+        Intent i = new Intent(this, ConsultarNotasActivity.class);
+        startActivity(i);
+    }
 }
 
