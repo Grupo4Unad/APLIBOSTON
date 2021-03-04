@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/gradiente"
+    tools:context=".MainActivity">
+
+    <CalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:onClick="InsertDatabase"
+                android:background="#98FB98">
+
+    </CalendarView>
+
+    <Button
+        android:id="@+id/btn_guardar"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:background="@drawable/danna"
+        android:layout_marginTop="10dp"
+        android:onClick="InsertDatabase"
+        android:text="Guardar Evento"
+        android:textSize="20dp"
+        android:textColor="#191970"/>
+
+    <EditText
+        android:id="@+id/et_nombre_evento"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:hint="Descripción del evento"
+        android:textColor="#8A2908"
+        android:textSize="14dp"
+        android:textColorHint="#191970">
+
+    </EditText>
+
+
+</LinearLayout>

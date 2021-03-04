@@ -191,6 +191,8 @@ public class MainActivity extends AppCompatActivity {
        startActivity(i);
 
 }
-   
 
+
+    public void InsertDatabase(View view) {
+    }
 }

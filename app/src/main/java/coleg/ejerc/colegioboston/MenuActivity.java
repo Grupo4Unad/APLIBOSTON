@@ -8,6 +8,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 
+
 import com.google.firebase.auth.FirebaseAuth;
 
 public class MenuActivity extends AppCompatActivity {
@@ -16,6 +17,7 @@ public class MenuActivity extends AppCompatActivity {
     ImageView img_docentes;
     Button btn_cerrar;
     Button btn_ayudas;
+    Button btn_agenda;
     FirebaseAuth mAuth;
 
 
@@ -23,6 +25,9 @@ public class MenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_menu);
+
+        btn_agenda=findViewById ( R.id.btn_agenda );
+
 
         img_estudiantes = findViewById(R.id.img_estudiantes);
 
@@ -48,7 +53,8 @@ public class MenuActivity extends AppCompatActivity {
 
 
 
-        mAuth=FirebaseAuth.getInstance(); btn_cerrar = findViewById(R.id.btn_cerrar);
+        mAuth=FirebaseAuth.getInstance();
+        btn_cerrar = findViewById(R.id.btn_cerrar);
 
         btn_cerrar.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,9 +75,14 @@ public class MenuActivity extends AppCompatActivity {
             }
         });
 
-
-
-
+        btn_agenda=findViewById(R.id.btn_agenda);
+        btn_agenda.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent siguiente=new Intent(MenuActivity.this, Fechas_y_eventos.class);
+                startActivity(siguiente);
+            }
+        });
 
     }
 
