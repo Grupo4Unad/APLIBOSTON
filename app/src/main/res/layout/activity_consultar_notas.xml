@@ -63,7 +63,7 @@
                 android:id="@+id/list_view_notas"
                 android:layout_width="match_parent"
                 android:layout_height="230dp"
-                android:background="#DA3F51B5"
+                android:background="#66bb6a"
                 android:fontFamily="sans-serif-smallcaps"
                 android:textColor="#000000" />
         </LinearLayout>

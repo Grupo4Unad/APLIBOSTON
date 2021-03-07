@@ -195,4 +195,7 @@ public class MainActivity extends AppCompatActivity {
 
     public void InsertDatabase(View view) {
     }
+
+    public void consultarNotas(View view) {
+    }
 }

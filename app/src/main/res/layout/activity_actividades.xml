@@ -28,7 +28,8 @@
             android:layout_margin="10dp"
             android:layout_marginRight="56dp"
             android:text="Sesion de Estudiantes"
-            android:textSize="18sp" />
+            android:textSize="18sp"
+            android:textStyle="bold"/>
 
         <TextView
             android:id="@+id/info_notas"
@@ -77,7 +78,7 @@
         <Button
             android:id="@+id/calificar"
             android:layout_width="200dp"
-            android:background="#3F51B5"
+            android:background="@drawable/macliza"
             android:textColor="@color/common_google_signin_btn_text_dark_pressed"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"
@@ -88,7 +89,7 @@
         <Button
             android:id="@+id/btn_noticias"
             android:layout_width="200dp"
-            android:background="#3F51B5"
+            android:background="@drawable/macliza"
             android:textColor="@color/common_google_signin_btn_text_dark_pressed"
             android:layout_height="wrap_content"
             android:layout_margin="10dp"

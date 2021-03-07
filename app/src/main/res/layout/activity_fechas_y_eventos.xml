@@ -22,12 +22,12 @@
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:background="@drawable/danna"
+        android:background="@drawable/macliza"
         android:layout_marginTop="10dp"
         android:onClick="InsertDatabase"
         android:text="Guardar Evento"
         android:textSize="20dp"
-        android:textColor="#191970"/>
+        android:textColor="#ffffff"/>
 
     <EditText
         android:id="@+id/et_nombre_evento"

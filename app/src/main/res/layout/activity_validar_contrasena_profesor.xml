@@ -40,7 +40,7 @@
             android:layout_height="wrap_content"
             android:text="@string/text_validar_contraseña_prof"
             android:textAllCaps="true"
-            android:textColor="#8F8E8E"
+            android:textColor="#212121"
             android:textStyle="bold" />
 
         <TableRow

@@ -64,6 +64,8 @@
             android:text="Crear noticia"
             android:onClick="abrirCrearNoticia"
             android:backgroundTint="#6A7EEC"
+            android:background="@drawable/macliza"
+            android:textSize="20dp"
              />
     </LinearLayout>
 

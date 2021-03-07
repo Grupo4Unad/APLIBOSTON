@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".CrearNoticia">
+    tools:context=".CrearNoticia"
+    android:background="@drawable/gradiente">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,6 +20,7 @@
             android:layout_height="wrap_content"
             android:textSize="30dp"
             android:text="Crear noticia"
+            android:textStyle="bold"
             android:layout_marginBottom="30dp"/>
 
         <TextView
@@ -58,16 +60,17 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            />
+            android:inputType="textPersonName" />
 
         <Button
             android:id="@+id/button"
             android:textColor="#ffffff"
             android:backgroundTint="@color/colorPrimary"
             android:layout_width="match_parent"
+            android:background="@drawable/macliza"
             android:layout_height="wrap_content"
             android:onClick="crear"
+            android:textSize="24dp"
             android:text="Crear" />
 
     </LinearLayout>
