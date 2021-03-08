@@ -9,86 +9,117 @@
     android:background="@drawable/gradiente"
     tools:context=".MainActivity">
 
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="119dp"
+        android:layout_height="119dp"
+        app:srcCompat="@drawable/login_back" />
+
     <TextView
-        android:textSize="25sp"
-        android:textColor="#000"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-smallcaps"
         android:gravity="center"
         android:text="Iniciar sesion"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:textColor="#3F51B5"
+        android:textSize="25sp">
 
     </TextView>
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+
     <EditText
         android:id="@+id/et_mail"
-        android:layout_marginBottom="10dp"
-        android:textColorHint="@color/colorPrimary"
-        android:hint="Coloque mail"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/text_ingresar_usuario"
+        android:textColorHint="@color/colorPrimary">
 
     </EditText>
 
     <EditText
         android:id="@+id/et_pass"
-        android:layout_marginBottom="10dp"
-        android:textColorHint="@color/colorPrimary"
-        android:hint="Coloque password"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:hint="@string/text_ingresar_contrasena"
+        android:inputType="textPassword"
+        android:textColorHint="@color/colorPrimary">
 
     </EditText>
 
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="60dp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
 
-    <Button
-        android:id="@+id/btn_login"
-        android:textColor="#fff"
-        android:text="Login"
-        android:background="@drawable/macliza"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_registrar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/macliza"
+            android:fontFamily="sans-serif-smallcaps"
+            android:padding="5dp"
+            android:text="  Registrarse   "
+            android:textColor="#fff">
+
+        </Button>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/macliza"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="   Iniciar Sesion   "
+            android:textColor="#fff">
 
 
-    </Button>
+        </Button>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp" />
 
     <Button
         android:id="@+id/btn_recuperar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
-        android:background="@drawable/macliza"
+        android:fontFamily="sans-serif-smallcaps"
         android:onClick="siguiente"
         android:padding="5dp"
         android:text="olvide mi contraseña"
-        android:textColor="#fff">
+        android:textColor="#88898A">
 
 
     </Button>
 
-    <Button
-        android:id="@+id/btn_registrar"
-        android:padding="5dp"
-        android:layout_marginTop="10dp"
-        android:textColor="#fff"
-        android:text="No tengo cuenta"
-        android:background="@drawable/macliza"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content">
-
-    </Button>
     <Button
         android:id="@+id/btn_aviso"
         android:layout_width="200dp"
         android:layout_height="33dp"
         android:layout_marginTop="15dp"
         android:background="#ffab40"
+        android:fontFamily="sans-serif-smallcaps"
         android:text="Leer... Importante...."
         android:textColor="#fafafa"
-        android:textSize="14dp"
 
+        android:textSize="14dp"
         android:textStyle="bold">
 
     </Button>
+
 
 
 

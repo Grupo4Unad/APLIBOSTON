@@ -15,6 +15,8 @@
     <string name="text_ingresar_ciclo">Seleccione el ciclo:</string>
     <string name="text_ingresar_curso">Seleccione el curso:</string>
     <string name="text_ingresar_guardar">Guardar</string>
+    <string name="text_ingresar_usuario">Por favor ingrese su usuario</string>
+    <string name="text_ingresar_contrasena">Por favor ingrese su contraseña</string>
 
 
 </resources>
