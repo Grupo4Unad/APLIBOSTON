@@ -7,9 +7,12 @@
     <string name="text_btn_validar">Validar</string>
     <string name="text_btn_atras">Atrás</string>
     <string name="text_btn_gestionar_notas">Gestionar Notas</string>
+    <string name="text_btn_gestionar_estudiantes">Gestionar Estudiantes</string>
     <string name="text_btn_agregar_notas">Agregar Notas</string>
     <string name="text_agregar_nota">Agregar Nota</string>
+    <string name="text_agregar_estudiante">Agregar Estudiante</string>
     <string name="text_btn_consultar_notas">Consultar Notas</string>
+    <string name="text_btn_consultar_estudiantes">Consultar Estudiantes</string>
     <string name="text_ingresar_nota">Ingrese la nota</string>
     <string name="text_btn_ingresar_doc">Ingrese el no. de documento</string>
     <string name="text_ingresar_ciclo">Seleccione el ciclo:</string>

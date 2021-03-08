@@ -11,11 +11,14 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainAviso"></activity>
+        <activity android:name=".ConsultarEstudiantesActivity"></activity>
+        <activity android:name=".AgregarEstudiantesActivity" />
+        <activity android:name=".IndexGestionarEstudiante" />
+        <activity android:name=".MainAviso" />
         <activity android:name=".MainActivityAyudas" />
         <activity android:name=".ConsultarNotasActivity" />
         <activity android:name=".CrearNoticia" />
-        <activity android:name=".NoticiasActivity"></activity>
+        <activity android:name=".NoticiasActivity" />
         <activity android:name=".Calificacion" />
         <activity android:name=".AgregarNotasActivity" />
         <activity android:name=".MenuNotasActivity" />
@@ -31,7 +34,6 @@
         <activity android:name=".RegistrarActivity" />
         <activity android:name=".HomeActivity" />
         <activity android:name=".MainActivity">
-
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

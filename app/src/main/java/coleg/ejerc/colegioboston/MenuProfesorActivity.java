@@ -22,6 +22,13 @@ public class MenuProfesorActivity extends AppCompatActivity {
        startActivity(i);
     }
 
+    public void indexGestionarEstudiante(View view)
+    {
+
+        Intent i = new Intent(this, IndexGestionarEstudiante.class);
+        startActivity(i);
+    }
+
     public void abrirCrearNoticia(View view) {
         Intent i = new Intent(this, CrearNoticia.class);
         startActivity(i);
