@@ -20,13 +20,13 @@
 
     <Button
         android:id="@+id/btn_cerrar1"
-        android:layout_marginTop="10dp"
-        android:textColor="#fff"
-        android:padding="10dp"
-        android:background="@drawable/macliza"
-        android:text="Cerrar sesion"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/macliza"
+        android:padding="10dp"
+        android:text="Cerrar sesion ok"
+        android:textColor="#fff"
         android:textSize="24dp">
 
     </Button>
