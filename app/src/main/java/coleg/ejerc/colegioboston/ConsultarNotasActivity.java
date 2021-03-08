@@ -4,10 +4,8 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 import android.widget.ArrayAdapter;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -29,7 +27,7 @@ public class ConsultarNotasActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_consultar_notas);
 
-        listaNotas = findViewById(R.id.list_view_notas);
+        listaNotas = findViewById(R.id.list_view_estudiantes);
         final ArrayList mData;
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         final DatabaseReference myRef = database.getReference("notas_estudiante");

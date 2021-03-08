@@ -2,7 +2,7 @@ package coleg.ejerc.colegioboston;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
-import java.util.ArrayList;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -10,7 +10,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Spinner;
-import android.widget.TextView;
 import android.widget.Toast;
 import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
@@ -18,10 +17,6 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
-import java.util.ArrayList;
-import java.util.List;
-
-import coleg.ejerc.colegioboston.modelo.Curso;
 //import coleg.ejerc.colegioboston.modelo.CursosManager;
 import coleg.ejerc.colegioboston.modelo.Notas;
 
@@ -56,7 +51,7 @@ public class AgregarNotasActivity extends AppCompatActivity {
         //lista_cursos.setAdapter(adaptador_curso);
         notas = findViewById(R.id.txtNota);
         documento = findViewById(R.id.txtDocumento);
-        guardar =findViewById(R.id.btn_agregar_nota);
+        guardar =findViewById(R.id.btn_agregar_estudiante);
         auth = FirebaseAuth.getInstance();
         database = FirebaseDatabase.getInstance();
         myRef = database.getReference("notas_estudiante");

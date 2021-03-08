@@ -60,7 +60,7 @@
                 android:layout_height="40dp" />
 
             <ListView
-                android:id="@+id/list_view_notas"
+                android:id="@+id/list_view_estudiantes"
                 android:layout_width="match_parent"
                 android:layout_height="230dp"
                 android:background="#66bb6a"

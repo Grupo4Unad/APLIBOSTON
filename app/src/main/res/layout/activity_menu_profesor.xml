@@ -62,6 +62,7 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="80dp"
+            android:onClick="abrirCrearNoticia"
             app:cardBackgroundColor="#6A7EEC">
 
             <LinearLayout
@@ -77,6 +78,7 @@
                     android:layout_marginTop="8dp"
                     android:paddingLeft="10dp"
                     app:srcCompat="@drawable/noticias" />
+
                 <TextView
                     android:id="@+id/textView15"
                     android:layout_width="wrap_content"
@@ -96,7 +98,8 @@
         <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="80dp"
-            app:cardBackgroundColor="#6A7EEC" >
+            app:cardBackgroundColor="#6A7EEC"
+            android:onClick="indexGestionarEstudiante">
 
             <ImageView
                 android:id="@+id/imageView6"
@@ -109,7 +112,6 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:onClick="indexGestionarEstudiante"
                 android:orientation="horizontal">
 
                 <TextView

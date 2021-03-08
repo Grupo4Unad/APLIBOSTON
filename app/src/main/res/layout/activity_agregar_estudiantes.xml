@@ -97,7 +97,7 @@
             android:layout_height="40dp" />
 
         <Button
-            android:id="@+id/btn_agregar_nota"
+            android:id="@+id/btn_agregar_estudiante"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:background="@drawable/macliza"
